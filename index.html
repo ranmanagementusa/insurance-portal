@@ -1,13 +1,88 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Insurance Portal</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <title>Insurance Management Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #bfa046;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 20px auto;
+            max-height: 100px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        th {
+            background-color: #bfa046;
+            color: white;
+            padding: 10px;
+        }
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .edit-button {
+            padding: 5px 10px;
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .edit-button:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <img src="./assets/ran-logo.png" alt="RAN Logo" class="logo" />
+    <h1>Insurance Management Portal</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Company Name</th>
+                <th>Policy Type</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Agent</th>
+                <th>Comments</th>
+                <th>Update</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tulane Enterprises LLC</td>
+                <td>Umbrella Policy</td>
+                <td>10-07-2025</td>
+                <td>10-07-2026</td>
+                <td>Nick Thompson</td>
+                <td>Policy renewed with updated building value.</td>
+                <td><button class="edit-button">Edit</button></td>
+            </tr>
+            <tr>
+                <td>Belk Avenue Operations LLC</td>
+                <td>General Liability</td>
+                <td>09-01-2025</td>
+                <td>09-01-2026</td>
+                <td>Amin Mulji</td>
+                <td>Audit refund pending follow-up.</td>
+                <td><button class="edit-button">Edit</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
 </html>
- 
